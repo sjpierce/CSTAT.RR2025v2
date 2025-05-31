@@ -1,0 +1,6 @@
+project:
+  title: "CSTAT.RR2025v2"
+  output-dir: "output"
+  render:
+    - Slides.qmd
+
