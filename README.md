@@ -7,15 +7,14 @@ Steven J. Pierce
 
 <!-- badges: start -->
 
-[![](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-[![Project Status: Inactive – The project has reached a stable, usable
-state but is no longer being actively developed; support/maintenance
-will be provided as time
-allows.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
+[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Project Status: WIP - Initial development is in progress, but there
+has not yet been a stable, usable release suitable for the
+public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 <!-- badges: end -->
 
 This repository holds materials for one of my professional presentations
-(Pierce, 2025, Ocotober 2). Its primary purpose is for me to use version
+(Pierce, 2025, October 2). Its primary purpose is for me to use version
 control tools while developing my slides, but its secondary purposes
 include distributing the slides to my audience and demonstrating how to
 use Quarto to create slides.
@@ -158,7 +157,7 @@ entry-spacing="0" line-spacing="2">
 
 <div id="ref-Pierce-RN8764" class="csl-entry">
 
-Pierce, S. J. (2025, Ocotober 2). *Reproducible research: Principles,
+Pierce, S. J. (2025, October 2). *Reproducible research: Principles,
 practices, and tools for generating reproducible statistical analyses
 and reports* \[Online seminar\]. Center for Statistical Training and
 Consulting webinar series on Responsible and Ethical Conduct of
@@ -171,7 +170,7 @@ Research, East Lansing, MI, United States.
 
 ## Citing This Repository
 
-Please cite my actual presentation (Pierce, 2025, Ocotober 2).
+Please cite my actual presentation (Pierce, 2025, October 2).
 
 ## License
 
