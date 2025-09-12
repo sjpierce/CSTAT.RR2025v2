@@ -42,3 +42,5 @@
 # Omit extra copy of graphics folder created when rendering scripts. It is not
 # needed because the files get embedded in the HTML files anyway.
 output/graphics/
+
+**/*.quarto_ipynb
