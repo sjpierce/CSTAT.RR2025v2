@@ -247,12 +247,9 @@ Roger Peng has argued that RR is an attainable minimum standard for science
 
 ::: {.column width="85%"} 
 
-* [https://sharing.nih.gov/data-management-and-sharing-policy](https://sharing.nih.gov/data-management-and-sharing-policy)
-* [https://grants.nih.gov/policy/reproducibility/index.htm](https://grants.nih.gov/policy/reproducibility/index.htm)
-* [https://new.nsf.gov/funding/data-management-plan](https://new.nsf.gov/funding/data-management-plan)
-* [https://www.nsf.gov/pubs/2019/nsf19022/nsf19022.pdf](https://www.nsf.gov/pubs/2019/nsf19022/nsf19022.pdf)
-* [https://www.nsf.gov/attachments/134722/public/Reproducibility_NSFPlanforOMB_Dec31_2014.pdf](https://www.nsf.gov/attachments/134722/public/Reproducibility_NSFPlanforOMB_Dec31_2014.pdf)
-
+* [https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/dms](https://grants.nih.gov/policy-and-compliance/policy-topics/sharing-policies/dms)
+* [https://grants.nih.gov/policy-and-compliance/policy-topics/reproducibility](https://grants.nih.gov/policy-and-compliance/policy-topics/reproducibility)
+* [https://www.nsf.gov/funding/data-management-plan](https://www.nsf.gov/funding/data-management-plan)
 * [https://ies.ed.gov/blogs/research/post/companion-guidelines-on-replication-and-reproducibility-in-education-research](https://ies.ed.gov/blogs/research/post/companion-guidelines-on-replication-and-reproducibility-in-education-research)
 
 :::
