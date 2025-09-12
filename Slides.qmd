@@ -352,6 +352,21 @@ or discuss your work as an exemplar of high quality science. That will all build
 your professional reputation.
 :::
 
+## Questions/Brief Discussion
+
+::: {.notes}
+Does anyone want to ask question about the concepts I've described so far? 
+
+If no one has any questions, ask:
+
+* Does anyone want to comment on how confident they are in the repeatability or 
+  reproducibility of their analyses? 
+* Does anyone want to share an experience where they had to grapple with 
+  repeatability or reproducibility issues? 
+* What are some possible barriers to reproducibility?
+
+::: 
+
 # How do we achieve reproducibility? {background-image="graphics/Hands_Raised.jpg" background-size="contain" background-position="bottom" background-repeat="no-repeat"}
 
 Understand the criteria, then apply principles, practices, & tools. 
