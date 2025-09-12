@@ -265,10 +265,8 @@ now expects it in a wider range of studies. Other federal funders like NSF and
 IES have also published materials promoting reproducibility.
 :::
 
-## Emerging Scientific Norms
-* Open science: 
-    * [https://www.cos.io/open-science](https://www.cos.io/open-science) 
-    * [https://open.science.gov](https://open.science.gov)
+## Scientific Norms
+* Open science ([https://www.cos.io/open-science](https://www.cos.io/open-science)) 
 * Pre-registered methods [@Bosnjak-RN8375; @Decoster-RN3192; @Moore-RN3318]
 * Reporting guidelines [@Appelbaum-RN3691; @Moher-RN2216; @Schulz-RN2218; @von-Elm-RN3288]
 * Publishing raw data [@Hrynaszkiewicz-RN3087; @Hrynaszkiewicz-RN3088]
@@ -276,10 +274,10 @@ IES have also published materials promoting reproducibility.
 * Institutional policies
 
 ::: {.notes}
-There are emerging scientific norms aligned with reproducibility. These are
-evident in the open science movement, calls for pre registered methods/trials,
-reporting guidelines, calls to publish raw data, and policies adopted by various
-journals and publishers. They are also reflected in some institutional policies.
+There are scientific norms aligned with reproducibility. These are evident in
+the open science movement, calls for pre registered methods/trials, reporting
+guidelines, calls to publish raw data, and policies adopted by various journals
+and publishers. They are also reflected in some institutional policies.
 :::
 
 ## Publishing Technology
