@@ -115,14 +115,23 @@ because all audiences need to assess the quality and credibility of your work.
 
 ::::
 
+:::: {.fragment}
+:::{.callout-important}
+Achieving repeatability is a stepping stone toward reproducibility! 
+:::
+::::
+
 ::: {.notes}
 Let's put reproducibility into a broader context. Statistical results can be
 classified into a few different categories. **>** They are repeatable when the
 original analyst can reliably obtain the same results from the original data.
 **>** They are reproducible if a new analyst can obtain the same result from the
 original data. **>** Finally, they are replicable if a new analyst can obtain
-the same result from a new set of data. How confident are you about where your
-work falls on this spectrum?
+the same result from a new set of data. **>** 
+
+It's worth noting that achieving repeatability is a stepping stone toward 
+reproducibility. It is unlikely other people can reproduce your findings if you 
+can't do that yourself. 
 :::
 
 ## RR is a Product
