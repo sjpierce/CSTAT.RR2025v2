@@ -3,4 +3,6 @@ project:
   output-dir: "output"
   render:
     - Slides.qmd
+    - Create_MyStudy_Data.qmd
+    - MyStudy_Report.qmd
 
