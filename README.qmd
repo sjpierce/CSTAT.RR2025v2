@@ -25,8 +25,8 @@ knitr::opts_chunk$set(
 # CSTAT.RR2025v2: Materials For CSTAT Webinar on Reproducible Research
 
 <!-- badges: start -->
-[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![Project Status: WIP - Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
 <!-- badges: end -->
 
 This repository holds materials for one of my professional presentations 
@@ -60,6 +60,10 @@ like Chrome, Edge, and Firefox.
   *This is the code that creates the slides.*
 * [`Slides.html`](https://github.com/sjpierce/CSTAT.RR2025v2/blob/main/output/Slides.html) 
   *These are final final slides.*
+* [`Create_MyStudy_Data.qmd`](https://github.com/sjpierce/CSTAT.RR2025v2/blob/main/Create_MyStudy_Data.qmd)
+* [`Create_MyStudy_Data.html`](https://github.com/sjpierce/CSTAT.RR2025v2/blob/main/output/Create_MyStudy_Data.html)
+* [`MyStudy_Report.qmd`](https://github.com/sjpierce/CSTAT.RR2025v2/blob/main/MyStudy_Report.qmd)
+* [`MyStudy_Report.html`](https://github.com/sjpierce/CSTAT.RR2025v2/blob/main/output/MyStudy_Report.html)
 
 ## Usage Tips
 
@@ -77,7 +81,7 @@ and file names are `highlighted like this` and comments are in normal text.
 The repository is set up as an 
 [RStudio project](https://support.rstudio.com/hc/en-us/articles/200526207-Using-RStudio-Projects). 
 
-* `CSTAT.RR2025/`: This is the root folder for the repository.
+* `CSTAT.RR2025v2/`: This is the root folder for the repository.
     * `.git/`: This hidden folder is used by Git. Leave it alone!
     * `.quarto/`: This hidden folder may be created by Quarto to hold temporary 
       files. Do not edit or delete any of these files unless you know what you 
@@ -85,6 +89,10 @@ The repository is set up as an
     * `.Rproj.user/`: This hidden folder is used by Rstudio. Leave it alone!
     * `_extensions/`: This folder contains files for Quarto extensions used by 
       my presentation slides. 
+    * `data/`: This folder is intended to hold R Data files (`*.RData`). 
+        * `MyStudy.RData`: This is an example data file created by 
+          `scripts/Create_MyStudy_Data.qmd` and used by 
+          `scripts/MyStudy_Report.qmd`. 
     * `graphics/`: This folder stores `.jpg` and `.png` graphics files used in 
       my slides and example files. 
     * `output/`: This folder holds rendered output from scripts in this Quarto 
@@ -96,6 +104,10 @@ The repository is set up as an
           created when I render the scripts. They include things like CSS, 
           JavaScript, and HTML widget libraries, which help to avoid duplicating 
           files across multiple output documents. 
+        * `Create_MyStudy_Data.html`: This is created by rendering 
+          `scripts/Create_MyStudy_Data.qmd`. 
+        * `MyStudy_Report.html`: This is created by rendering 
+          `scripts/MyStudy_Report.qmd`.
         * `Slides.html`: These are the slides used during the presentation. 
     * `.gitignore`: This file tells Git what files to ignore and omit from 
       synchronizing with the main repository on GitHub.
@@ -114,14 +126,21 @@ The repository is set up as an
       in square brackets for in-text citations and put the reference list in 
       the order the citations were used. It is used by Quarto to format 
       reference sections. 
+    * `Create_MyStudy_Data.qmd`: This Quarto script creates the example file 
+      `data/MyStudy.RData`. The output from rendering the script is stored 
+      `output/Create_MyStudy_Data.html`.
     * `CSTAT_style.css`: This custom style sheet provides logo and title banner 
       formatting settings and classes for my HTML outputs. It supplements 
       `_brand.yml` and `CSTAT_theme.scss`. 
     * `CSTAT_theme.scss`: This is a Sassy custom style sheet file to provide 
       formatting settings and classes for my slides and other HTML outputs. It 
       supplements `_brand.yml` and `CSTAT_style.css`. 
-    * `CSTAT.RR2025.Rproj`: This is an RStudio project file. It contains 
+    * `CSTAT.RR2025v2.Rproj`: This is an RStudio project file. It contains 
       some settings for working with the project in that software. 
+    * `MyStudy_Report.qmd`: This Quarto script is an example dynamic document 
+      used in the live demonstration during my presentation. It reads in example 
+      data, then analyzes it. The rendered output is stored in 
+      `output/MyStudy_Report.html`.
     * `README.md`: This file is obtained by knitting the `README.qmd` file and 
       is used by GitHub to display information about the repository. Do not edit 
       it manually: just re-knit `README.qmd` to update it. In R Studio, you can 
