@@ -7,8 +7,6 @@ author:
     email: pierces1@msu.edu
     affiliations: 
       - name: Michigan State University, Center for Statistical Training and Consulting,  [https://cstat.msu.edu](https://cstat.msu.edu)
-bibliography: references.bib          # File holds BibTeX data for references
-csl: apa.csl                          # File controls citation & reference list format
 date: now                             # Sets Date Published = when script is rendered
 date-modified: last-modified          # Sets Date Modified = when code was last saved
 date-format: YYYY-MM-DD HH:mm:ss z    # Show date, time, & timezone
@@ -16,6 +14,8 @@ params:                               # Default values for parameters
   SourceDir: ""                       # Relative path to folder holding this file
   SourceFile: "MyStudy_Report.qmd"    # Name of this script file
   LogFile: "MyStudy_Report.html"      # Name of rendered output file
+bibliography: references.bib          # File holds BibTeX data for references
+csl: apa.csl                          # File controls citation & reference list format
 css: CSTAT_style.css                  # File formats title banner block w/ logo.
 title-block-banner: true              # Enable the banner, per CSTAT_style.css 
 title-block-banner-color: "#18453B"   # Spartan Green color for title text. 
