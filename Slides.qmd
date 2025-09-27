@@ -1080,31 +1080,6 @@ Let's take a look at actual dynamic documents!
 ::: {.notes}
 *Elapsed time should be ~30-32 min, use next 10-15 min to show code and output*
 *Set RStudio Appearance for console font to 14pt!* 
-Now I'm going to show you an actual Quarto script and the output it produces. 
-Both files are available online along with my slides, so you can examine and 
-compare them in detail later. For now, enjoy this guided tour. 
-
-* Script
-    * YAML header
-    * Headings
-    * Callout blocks
-    * In-text citation
-    * Formatting text: bold, italics, type-writer font
-    * Inline code
-    * Code chunk
-    * Table
-* Output
-    * Title block content
-    * Table of contents & numbered headings
-    * In-text citation
-    * Callout blocks
-    * Show vs. hide code chunks
-    * Table 1 numbering & appearance
-    * Table 2 raw vs formatted output 
-    * Figure 1
-    * Reference list
-    * Software information
-    
 :::
 
 ## Bonus Resources {.smaller}
