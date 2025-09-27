@@ -56,7 +56,7 @@ reproducibility?" After answering those questions, I'm going to do a
 demonstration. 
 :::
 
-# What do you mean by <br> reproducible?  {background-image="graphics/pexels-august-de-richelieu-4427508.jpg" background-size="contain" background-position="left" background-repeat="no-repeat" style="text-align: right;"}
+# What do you mean by <br> reproducible?  {background-image="graphics/pexels-august-de-richelieu-4427508.jpg" fig-alt="A photo of a man and a woman, both dressed in business suits, having a meeting." background-size="contain" background-position="left" background-repeat="no-repeat" style="text-align: right;"}
 
 ::: {style="text-align: right;"}
 Let's define some concepts.
@@ -165,7 +165,7 @@ to apply the principles to quantitative methods and those are my forte as a
 statistician, so I'll focus on that route to reproducibility today.
 :::
 
-# Why aim for <br> reproducibility? {background-image="graphics/Woman_Raising_Hand.jpg" background-size="contain" background-position="right" background-repeat="no-repeat"}
+# Why aim for <br> reproducibility? {background-image="graphics/Woman_Raising_Hand.jpg" fig-alt="Photo of a woman raising her hand to ask a question."  background-size="contain" background-position="right" background-repeat="no-repeat"}
 
 :::: {.columns}
 
@@ -367,7 +367,7 @@ If no one has any questions, ask:
 
 ::: 
 
-# How do we achieve reproducibility? {background-image="graphics/Hands_Raised.jpg" background-size="contain" background-position="bottom" background-repeat="no-repeat"}
+# How do we achieve reproducibility? {background-image="graphics/Hands_Raised.jpg" fig-alt="Photo of 10 hands raised, as if many people have questions."  background-size="contain" background-position="bottom" background-repeat="no-repeat"}
 
 Understand the criteria, then apply principles, practices, & tools. 
 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
@@ -379,7 +379,7 @@ practices and tools.
 :::
 
 ::: {style="text-align: center;"}
-## Criteria for Reproducbility <br> [@Peng-RN3189] {background-image="graphics/Woman_Thinking.png" background-size="contain" background-position="left" background-repeat="no-repeat"}
+## Criteria for Reproducbility <br> [@Peng-RN3189] {background-image="graphics/Woman_Thinking.png" fig-alt="Photo of a businesswoman touching her chin while she stares at the slide title." background-size="contain" background-position="left" background-repeat="no-repeat"}
 
 ::: {.incremental}
 * Data
@@ -492,7 +492,7 @@ possible now. Given what I've learned in recent years, if asked to resume using
 those older tools and workflows, I'd probably break out my favorite Spock quote.
 :::
 
-## Spock {background-image="graphics/Spock.jpg" background-position="top" }
+## Spock {background-image="graphics/Spock.jpg" fig-alt="A photo of Leonard Nimoy playing the Star Trek character Mr. Spock." background-position="top" }
 
 ::: {.absolute left="0%" top="65%" style="font-size:.8em; padding: 0.25em .5em; background-color: rgba(255, 255, 255, .5); backdrop-filter: blur(5px); box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); border-radius: 20px;"}
 
@@ -507,7 +507,7 @@ ahead of stone knives and bearskins."
 of stone knives and bearskins."
 :::
 
-## Free, Open Source Software Tools for Reproducible Research {background-image="graphics/Keyboard_Typing.jpg"}
+## Free, Open Source Software Tools for Reproducible Research {background-image="graphics/Keyboard_Typing.jpg" fig-alt="Photo of hands typing on a laptop."}
 
 :::: {style="padding: 0.25em .5em; background-color: rgba(255, 255, 255, .5); backdrop-filter: blur(5px); box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); border-radius: 20px;"}
 * [R](https://www.r-project.org/) [@R-Devel-Core-RN8182], for statistical 
@@ -582,7 +582,7 @@ report by re-rendering the script, or fix an error in the script or the data
 then render again to automate updating the report.
 :::
 
-## A Research Compendium ... {background-image="graphics/pexels-anete-lusina-4792285.jpg"}
+## A Research Compendium ... {background-image="graphics/pexels-anete-lusina-4792285.jpg" fig-alt="Photo of hands searching through a box of file folders."}
 
 :::: {style="padding: 0.25em .5em; background-color: rgba(255, 255, 255, .5); backdrop-filter: blur(5px); box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); border-radius: 20px;"}
 organizes digital files so others can review or use them to 
@@ -607,7 +607,7 @@ You can facilitate collaboration by thoughtfully setting up a compendium with
 attention to applying the organization, separation, and integration principles.
 :::
 
-## R Packages are ... {background-image="graphics/folder-146940_1920.png"}
+## R Packages are ... {background-image="graphics/folder-146940_1920.png" fig-alt="Drawing of a manila file folder with some papers inside it."}
 folders of digital files designed for sharing code & help documentation. 
 [@Wickham-RN3898] 
 
@@ -633,7 +633,7 @@ suggests specific kinds of documentation to include, like a README file that
 introduces new users to your work.
 :::
 
-## RStudio Projects are ... {background-image="graphics/folder-146940_1920.png"}
+## RStudio Projects are ... {background-image="graphics/folder-146940_1920.png" fig-alt="Drawing of a manila file folder with some papers inside it."}
 folders of files that:
 
 * Keep files for an analysis project together
@@ -659,7 +659,7 @@ entire collection of files all at once. **>** So, turn your compendium into an
 RStudio project.
 :::
 
-## Git Repositories are ... {background-image="graphics/folder-146940_1920.png"}
+## Git Repositories are ... {background-image="graphics/folder-146940_1920.png" fig-alt="Drawing of a manila file folder with some papers inside it."}
 folders of files tracked by Git for version control. [@Bryan-RN3900; @Chacon-RN3480; @Torvalds-RN3929] 
 
 * Preserve a history of changes to each tracked file
@@ -753,7 +753,7 @@ repository public so that people outside your team can access reproducibility
 materials.
 :::
 
-## Quarto Projects are ... {background-image="graphics/folder-146940_1920.png"}
+## Quarto Projects are ... {background-image="graphics/folder-146940_1920.png" fig-alt="Drawing of a manila file folder with some papers inside it."}
 folders of files that allow:
 
 * Rendering some or all dynamic documents 
@@ -811,7 +811,7 @@ what it will ignore. This basic structure has worked very well for me across
 several projects.
 :::
 
-## Collaboration Stakeholders {style="text-align: right" background-image="graphics/pexels-fauxels-3184634.jpg" background-position="top" }
+## Collaboration Stakeholders {style="text-align: right" background-image="graphics/pexels-fauxels-3184634.jpg" fig-alt="Photo of a team of several people in business suits sitting at a table discussing a report." background-position="top" }
 
 :::: {.absolute left="45%" top="40%" style="padding: 0.25em .5em; background-color: rgba(255, 255, 255, .5); backdrop-filter: blur(5px); box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); border-radius: 20px; text-align: left;"}
 
@@ -905,7 +905,7 @@ slides, and another that creates a report. This diagram makes it easy to see how
 10 files are related at a glance.
 :::
 
-## Automation Tips {background-image="graphics/robot-6654025_1280.png" background-size="40%" background-position="right" background-repeat="no-repeat"}
+## Automation Tips {background-image="graphics/robot-6654025_1280.png" fig-alt="Photo of a small robot gesturing toward the slide text." background-size="40%" background-position="right" background-repeat="no-repeat"}
 
 * Use scripts instead of GUIs
 * Write [self-contained scripts](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
@@ -949,7 +949,7 @@ strictly required. Use a script to automate recording information about the
 software environment to meet the documentation criterion for reproducibility.
 :::
 
-## Integration Tips  {background-image="graphics/pexels-diva-plavalaguna-6147357.jpg"}
+## Integration Tips  {background-image="graphics/pexels-diva-plavalaguna-6147357.jpg" fig-alt="Drawing of several interlocking puzzle pieces."}
 
 :::: {style="padding: 0.25em .5em; background-color: rgba(255, 255, 255, .5); backdrop-filter: blur(5px); box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); border-radius: 20px;"}
 
@@ -1038,7 +1038,7 @@ your main content, including things like headings, narrative text, lists, and
 all these other elements that I've listed here.
 :::
 
-## Quarto Scripts: Code {background-image="graphics/pexels-goumbik-574069.jpg"}
+## Quarto Scripts: Code {background-image="graphics/pexels-goumbik-574069.jpg" fig-alt="Photo of a laptop sitting on a table while someone types code."}
 
 :::: {style="padding: 0.25em .5em; background-color: rgba(255, 255, 255, .5); backdrop-filter: blur(5px); box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .5); border-radius: 20px;"}
 
