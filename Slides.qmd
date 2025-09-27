@@ -352,7 +352,7 @@ or discuss your work as an exemplar of high quality science. That will all build
 your professional reputation.
 :::
 
-## Questions/Brief Discussion
+## Questions/Brief Discussion (1)
 
 ::: {.notes}
 Does anyone want to ask question about the concepts I've described so far? 
@@ -811,7 +811,7 @@ what it will ignore. This basic structure has worked very well for me across
 several projects.
 :::
 
-## Questions/Brief Discussion
+## Questions/Brief Discussion (2)
 
 ::: {.notes}
 Does anyone want to ask questions before I talk more about key principles?
