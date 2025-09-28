@@ -379,7 +379,7 @@ practices and tools.
 :::
 
 ::: {style="text-align: center;"}
-## Criteria for Reproducbility <br> [@Peng-RN3189] {background-image="graphics/Woman_Thinking.png" fig-alt="Photo of a businesswoman touching her chin while she stares at the slide title." background-size="contain" background-position="left" background-repeat="no-repeat"}
+## Criteria for Reproducbility <br> [@Peng-RN3189] {background-image="graphics/Woman_Thinking.png" fig-alt="Photo of a businesswoman touching her chin while she looks at and thinks about the slide title." background-size="contain" background-position="left" background-repeat="no-repeat"}
 
 ::: {.incremental}
 * Data
