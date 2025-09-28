@@ -374,7 +374,7 @@ Understand the criteria, then apply principles, practices, & tools.
 
 ::: {.notes}
 So the third question is "how do we achieve reproducibility?". After you 
-understand the relevant criteria, it a matter of applying some principles, 
+understand the relevant criteria, it's a matter of applying some principles, 
 practices and tools. 
 :::
 
@@ -390,14 +390,20 @@ practices and tools.
 
 ::: {.notes}
 Reproducibility is a continuum, but there are some simple criteria that we can
-use to evaluate how reproducible a given project is. **>** The data criterion
-requires sharing your data because nobody can recreate your findings without
-them. **>** The methods criterion requires sharing your methods in sufficient
-detail, preferably through sharing the actual software code or scripts you used
-to get the results. **>** The documentation criterion requires sharing adequate
-documentation of your data set and software environment so others can understand
-what you had, what you used to analyze it, and what it really means. **>**  
-Finally, the distribution criterion requires using standard methods to 
+use to evaluate how reproducible a given project is. **>** 
+
+The data criterion requires sharing your data because nobody can recreate your
+findings without them. **>**
+
+The methods criterion requires sharing your methods in sufficient detail,
+preferably through sharing the actual software code or scripts you used to get
+the results. **>**
+
+The documentation criterion requires sharing adequate documentation of your data
+set and software environment so others can understand what you had, what you
+used to analyze it, and what it really means. **>**
+
+Finally, the distribution criterion requires using standard methods to
 distribute all these materials.
 :::
 
@@ -626,6 +632,7 @@ R packages are normally used to share code & associated help files so other
 people can use custom software. They are just folders of digital files organized
 into a conventional structure; they can contain data, meta-data, and
 documentation; and can even contain dynamic documents and rendered output. **>**
+
 So, Marwick and colleagues suggest using an R package as your research
 compendium! The conventional structure guides you to organize your files into
 specific subfolders and separate certain kinds of files from each other. It
@@ -655,8 +662,9 @@ needed. They also set the default working directory for R, complete with R
 workspace and history. They store project-specific settings in a file named
 after the folder itself. So if your project is a folder called `MyReport`, its
 project file would be called `MyReport.Rproj`. You can use that file to open the
-entire collection of files all at once. **>** So, turn your compendium into an
-RStudio project.
+entire collection of files all at once. **>** 
+
+So, I recommend turning your compendium into an RStudio project.
 :::
 
 ## Git Repositories are ... {background-image="graphics/folder-146940_1920.png" fig-alt="Drawing of a manila file folder with some papers inside it."}
@@ -772,8 +780,9 @@ Quarto also has software support for a project-based workflow. A Quarto project
 is just a folder of files that allows you to easily render some or all the
 dynamic documents it contains, use a configuration file to share settings across
 documents, redirect output to another folder, and the option to freeze rendered
-output unless the code that creates it has changed.  **>** So, I suggest turning
-a subfolder in your compendium into a Quarto project.
+output unless the code that creates it has changed.  **>** 
+
+So, I suggest turning a subfolder in your compendium into a Quarto project.
 :::
 
 ## Example Folder Structure 
@@ -830,12 +839,12 @@ Does anyone want to ask questions before I talk more about key principles?
 ::::
 
 ::: {.notes}
-Plan your work as a collaborative effort with multiple stakeholders, such your
-future self, your team, peer reviewers, and your audience. Knowing you will
+Plan your work as a collaborative effort with multiple stakeholders, such as
+your future self, your team, peer reviewers, and your audience. Knowing you will
 share files with several kinds of people orients you to the need to communicate
 what you are doing, how the materials are organized, and how they can be used to
 reproduce results. It motivates you to make things clear and include good
-documentation. But why do I  include your future self as a stakeholder? To
+documentation. But why do I include your future self as a stakeholder? To
 paraphrase a former colleague "your worst collaborator is often the you from 6
 months ago who skipped writing down some key details because you foolishly
 assumed you'd remember them later."
@@ -1036,7 +1045,7 @@ files from their version histories.
 ::::
 
 ::: {.notes}
-I'll show you some example files in a minute but it helps to understand a little
+I'll show you some example files shortly but it helps to understand a little
 about the anatomy of a Quarto script first. It is just a plain text file with a
 name that ends in `.qmd`. It uses a simple markdown syntax to format the output
 it will render. The top of the file is the YAML header, which contains
@@ -1089,8 +1098,11 @@ Let's take a look at actual dynamic documents!
 *Set RStudio Appearance for console font to 14pt!* 
 
 Now I'm going to show you parts of an actual Quarto script and the output it
-produces. Both files are available online along with my slides, so you can
-examine and compare them in detail later. For now, enjoy this guided tour.
+produces. I'll focus on some crucial parts that show how dynamic documents can 
+help you do more reproducible work, but we may not have enough time to cover 
+every detail today. That's why both files are available online along with my 
+slides, so you can examine and compare them in detail later. You are welcome to 
+email me questions about them.
 :::
 
 ## MyStudy_Report.qmd YAML Header (1)
@@ -1114,10 +1126,10 @@ and times when the document was published and the code was last modified.
 
 ::: {.notes}
 In the HTML output, you can see how those YAML key settings and metadata were
-placed in a clean, formatted report layout. My email address and ORCID became
+placed in a clean, structured report layout. My email address and ORCID became
 clickable icons next to my name. The two dates preserve important metadata about
 when the work was done. I could simplify the date format by changing the
-relevant YAML key and re-rendering the document, but I prefer preserving more 
+relevant YAML key and re-rendering the document, but I prefer these more
 detailed time-stamps.
 :::
 
@@ -1126,21 +1138,21 @@ detailed time-stamps.
 ![](graphics/Script_YAML_format.png){fig-alt="Screen capture of lines 19-34 of MyStudy_Report.qmd." height=100%}
 
 ::: {.notes}
-Quarto's default output is reasonable, but you may want to customize it to 
-achieve a specific look or match a brand style guide. I'm using Lines 19-34 of 
-the YAML header to render my output to an HTML file with custom formatting 
-based on MSU and CSTAT brand guidelines. First, the css key names a text file
-holding style sheet settings that set background color for the title banner to 
-white and insert a logo in the upper left corner. The next two keys enable that 
-title banner and logo and set the title text color to Spartan Green. Lines 22-24 
-tell Quarto to render the output as an HTML file and apply some thematic
-formatting settings found in a brand file and a theme file. Those set the font, 
-font sizes, and general color palette, plus specify where to find logo files.  
-Lines 25-27 put a table of contents with up to 3 layers on the left side of the
-report. Lines 28 and 29 automatically number the first 3 layers of section
-headings. Lines 30-32 insert code blocks into the output, collapse them down to
-buttons by default, and control formatting of those blocks. Line 33 makes the
-HTML file self-contained so it is easier to send to people.
+Quarto's default output is reasonable, but you may want to customize it to
+achieve a specific look or match a style guide. I'm using Lines 19-34 of the
+YAML header to render my output to an HTML file with custom formatting based on
+MSU and CSTAT brand guidelines. First, the css key names a text file holding
+style sheet settings that set background color for the title banner to white and
+insert a logo in the upper left corner. The next two keys enable that title
+banner and logo and set the title text color to Spartan Green. Lines 22-24 tell
+Quarto to render the output as an HTML file and apply some thematic formatting
+settings found in a brand file and a theme file. Those set the font, font sizes,
+and general color palette, plus specify where to find logo files. Lines 25-27
+put a table of contents with up to 3 layers on the left side of the report.
+Lines 28 and 29 automatically number the first 3 layers of section headings.
+Lines 30-32 insert code blocks into the output, collapse them down to buttons by
+default, and control formatting of those blocks. Line 33 makes the HTML file
+self-contained so it is easier to send to people.
 :::
 
 ## MyStudy_Report.html (2)
@@ -1173,7 +1185,7 @@ improves navigation and usability.
 Clicking a table of contents entry takes you the relevant section and expands it
 to show any subheadings. This is the beginning of Section 2.1. You can also see 
 that Quarto has inserted a code button  below the paragraph because the script 
-has a short chunk of R code there. Clicking that Code button **>** would open  
+has a short chunk of R code there. Clicking that Code button **>** would open 
 the chunk to show the R code that produced the "here" message output just below 
 the button. That message automates documenting where my local repository was
 stored when I rendered the output. Clicking the Code button again would fold the
@@ -1224,7 +1236,7 @@ research design for the example study. This preserves methodology notes and
 makes it easier to interpret analyses correctly. Where static analysis scripts
 produce only raw statistical output, dynamic documents can be more complete,
 clearer, and less cryptic because you can insert any narrative text you like and
-you can supplment that with tables or figures as well. You can auto-number a
+you can supplement that with tables or figures as well. You can auto-number a
 table by giving the code chunk that creates it a suitable label, add a caption,
 include footnotes, and even cross-reference the table in the text.
 :::
@@ -1242,7 +1254,7 @@ people already familiar with reading raw R output.
 ![](graphics/Output_Table2.png){fig-alt="Screen capture of MyStudy_Report.html showing Table 2." height=100%} 
 
 ::: {.notes}
-Manually cpying the raw crosstab into a different document and formatting it
+Manually copying the raw crosstab into a different document and formatting it
 takes time. If the data change later, you have to do that all over again.
 Dynamic documents can automate turning it into a nicer table with just a little
 more code. Then if the data changes, we just re-render the script and get a
@@ -1300,10 +1312,11 @@ tells Quarto where to put the reference list.
 ![](graphics/Output_Software.png){fig-alt="Screen capture of MyStudy_Report.html showing the start of the Software Information section." height=100%} 
 
 ::: {.notes}
-Finally, I like to add a final section that documents information about the 
-software I used to create my report. This includes the overview you see here,
-plus some subsections that show the list of R package versions loaded, and 
-details about the status of the Git repository. You can skim through the example 
+I like to add a final section that documents information about the software I
+used to create my report. That's consistent with the documentation criterion for
+reproducibility. This software section starts with the overview you see here,
+then has a subsections that show the list of R package versions loaded, and
+details about the status of the Git repository. You can skim through the example
 file later to see more of those details.
 :::
 
