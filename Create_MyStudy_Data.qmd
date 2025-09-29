@@ -138,32 +138,14 @@ MyStudy <- sim_2arm_prepost(Npg = 80,
 Consistent with the separation principle, we want to store the data in a 
 different folder than either code or output. Because it is a native R data file
 (`*.RData`), we should put it in the `data/` folder per R package conventions. 
-
-We use the `here` package's `here()` function to automate using a relative path 
-name. This argument to the function is a path name relative to the folder that
-contains the RStudio project file for this RStudio project. 
-
-```{r}
-#| label: demonstrate-here-root
-
-# Locate & report the root folder of the RStudio project.
-here()
-```
-
-If we give the `here()` function an relative path to a subfolder or file in the 
-local repository, it will construct a path to that instead, as shown below. 
-
-```{r}
-#| label: demonstrate-here-subfolder
-
-# Locate & report the location of the `data/` subfolder.
-here("data/")
-```
+We use the `here` package's `here()` function to specify a file location
+using a path name relative to relative to the project-level root directory 
+identified above in the Declare Path section. 
 
 Now we actually save out the data file. This is fictional data, so we can safely 
 commit it to a public GitHub repository and track changes to it. For 
-reproducibility purposes, I like to document the name, size, and last modified 
-date for data files that I create. 
+reproducibility purposes, I document the name, size, and last modified date for 
+the data file after saving it. 
 
 ```{r}
 #| label: save-MyStudy 
