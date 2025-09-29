@@ -59,11 +59,12 @@ Also, this box is an example of a Quarto [callout block](https://quarto.org/docs
 # Setup
 
 ## Declare Path
-This next chunk declares the path to this script relative to the project-level 
+This next chunk declares the path to this script relative to the project-level
 root directory. If the file is not in the right location under the project root
-you'll get a warning message. This helps ensure relative paths are all working 
-as expected. For this chunk to work, you must have the relevant parameters set 
-properly in the YAML header.
+you'll get a warning message. This helps ensure relative paths are all working
+as expected. The message it produces also documents where the local repository
+was stored when this file was rendered. For this chunk to work, you must have
+the relevant parameters set properly in the YAML header.
 
 ``` {r}
 #| label: declare-path
@@ -82,9 +83,14 @@ library(here)           # for here(), to make code more portable
 library(rmarkdown)      # for pandoc_version()
 library(devtools)       # for session_info()
 library(dplyr)          # for %>%, bind_cols(), rename(), etc.
-library(piercer)        # for git_report(), sim_2arm_prepost()
+library(piercer)        # for file_details(), git_report(), sim_2arm_prepost()
 library(quarto)         # for quarto_version()
 ```
+
+:::{.callout-tip}
+The *piercer* package is available from my public GithHub repository at 
+[https://github.com/sjpierce/piercer](https://github.com/sjpierce/piercer). 
+:::
 
 # Create Example Data
 We need to create some simulated data to use as an example data frame called 
@@ -102,6 +108,10 @@ Population parameters for the simulated data will assume:
 * Homogeneity of variance, with $SD = 10$ for both pretest and posttest scores
   in both groups. 
 * No site effect on either pretest or posttest scores. 
+
+Setting the random number seed via `set.seed()` should make the dataset more 
+reproducible across computers. If we don't do that, we'll get different data 
+each time we run this script. 
 
 ```{r}
 #| label: create-MyStudy 
@@ -140,6 +150,9 @@ contains the RStudio project file for this RStudio project.
 here()
 ```
 
+If we give the `here()` function an relative path to a subfolder or file in the 
+local repository, it will construct a path to that instead, as shown below. 
+
 ```{r}
 #| label: demonstrate-here-subfolder
 
@@ -148,13 +161,16 @@ here("data/")
 ```
 
 Now we actually save out the data file. This is fictional data, so we can safely 
-commit it to a public GitHub repository and track changes to it.
+commit it to a public GitHub repository and track changes to it. For 
+reproducibility purposes, I like to document the name, size, and last modified 
+date for data files that I create. 
 
 ```{r}
 #| label: save-MyStudy 
 
 # Use here() to specify the desired relative path & file name.
 save(MyStudy, file = here("data/MyStudy.RData"))
+file_details(here("data/MyStudy.RData"))
 ```
 
 # References

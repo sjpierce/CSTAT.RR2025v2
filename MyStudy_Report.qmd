@@ -79,7 +79,8 @@ instead.
 This next chunk declares the path to this script relative to the project-level 
 root directory. If the file is not in the right location under the project root
 you'll get a warning message. This helps ensure relative paths are all working 
-as expected. 
+as expected. The message it produces also documents where the local repository
+was stored when this file was rendered.
 
 ``` {r}
 #| label: declare-path
@@ -89,8 +90,8 @@ here::i_am(path = paste0(params$SourceDir, params$SourceFile))
 ```
 
 ::: {.callout-tip}
-For this chunk to work, you must have the relevant parameters set properly in 
-the YAML header. 
+For the chunk above to work, you must have the relevant parameters set properly
+in the YAML header.
 
 * The `SourceDir` parameter should be a text string with the the relative path 
   from the RStudio project root folder to the folder where this file is stored. 
@@ -123,9 +124,14 @@ library(broom)           # for glance(), tidy()
 library(marginaleffects) # for avg_comparisons(), avg_predictions()
 library(modelsummary)    # for modelsummary()
 options(modelsummary_factory_html = 'kableExtra')
-library(piercer)         # for git_report(), sim_2arm_prepost()
+library(piercer)         # for file_details(), git_report()
 library(quarto)          # for quarto_version()
 ```
+
+:::{.callout-tip}
+The *piercer* package is available from my public GithHub repository at 
+[https://github.com/sjpierce/piercer](https://github.com/sjpierce/piercer). 
+:::
 
 ## Load Data
 Following the **separation principle**, the data are stored separate from the 
@@ -134,13 +140,19 @@ an `*.RData` file stored in the local repository. That will overwrite any
 objects already in memory that have the same names as the objects being loaded.
 
 ::: {.callout-important}
-Run the `Create_MyStudy_Data.qmd` script to create the data file loaded below. 
+The data file is already stored in the `CSTAT.RR2025v2` repository, but you 
+could also run the `Create_MyStudy_Data.qmd` script to re-create it. 
 :::
+
+To satisfy the **documentation** criterion for reproducibility, the next chunk 
+reports the name, size, and last modified date for the data file after loading 
+it. 
 
 ``` {r}
 #| label: load-MyStudy-data
 
 load(file=here("data/MyStudy.RData"))
+file_details(here("data/MyStudy.RData"))
 ```
 
 # Methods
