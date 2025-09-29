@@ -1228,6 +1228,20 @@ to render text in a typewriter font.
 :::
 
 ## MyStudy_Report.html (6)
+![](graphics/Output_Load_Data.png){fig-alt="Screen capture of MyStudy_Report.html showing Section 2.3." height=100%} 
+
+::: {.notes}
+Since the required data is in a separate file from the code, we have to load it.
+I recommend documenting the data file's name, size, and last modified date after
+you load it. This can help clarify what's gone wrong if a script is no longer
+giving you the same results it did previously (a failure of repeatability), or
+if a script is giving you and another team member different results (a failure
+of reproducibility). The discrepancy is usually a result of changes in the data,
+the script's code, or in the software environment. Check whether the data file
+details match first!
+:::
+
+## MyStudy_Report.html (7)
 ![](graphics/Output_Table1.png){fig-alt="Screen capture of MyStudy_Report.html showing Table 1." height=100%} 
 
 ::: {.notes}
@@ -1241,7 +1255,7 @@ table by giving the code chunk that creates it a suitable label, add a caption,
 include footnotes, and even cross-reference the table in the text.
 :::
 
-## MyStudy_Report.html (7)
+## MyStudy_Report.html (8)
 ![](graphics/Output_crosstab.png){fig-alt="Screen capture of MyStudy_Report.html showing raw crosstab output." height=100%} 
 
 ::: {.notes}
@@ -1250,7 +1264,7 @@ site and group. This result is functional and accurate, but only suitable for
 people already familiar with reading raw R output. 
 :::
 
-## MyStudy_Report.html (8)
+## MyStudy_Report.html (9)
 ![](graphics/Output_Table2.png){fig-alt="Screen capture of MyStudy_Report.html showing Table 2." height=100%} 
 
 ::: {.notes}
@@ -1261,7 +1275,7 @@ more code. Then if the data changes, we just re-render the script and get a
 fully formatted, updated table.
 :::
 
-## MyStudy_Report.html (9)
+## MyStudy_Report.html (10)
 ![](graphics/Output_ANCOVA.png){fig-alt="Screen capture of MyStudy_Report.html showing raw ANCOVA model results." height=80%} 
 
 ::: {.notes}
@@ -1271,7 +1285,7 @@ another document is an opportunity for transcription errors. We can avoid that
 by generating the desired report directly with a dynamic document.
 :::
 
-## MyStudy_Report.html (10)
+## MyStudy_Report.html (11)
 ![](graphics/Output_Table3.png){fig-alt="Screen capture of MyStudy_Report.html showing Table 3." height=100%} 
 
 ::: {.notes}
@@ -1281,7 +1295,7 @@ get updated results. We could also insert some narrative text with our
 interpretation of the results.
 :::
 
-## MyStudy_Report.html (11)
+## MyStudy_Report.html (12)
 ![](graphics/Output_Figure1.png){fig-alt="Screen capture of MyStudy_Report.html showing Figure 1." height=100%} 
 
 ::: {.notes}
@@ -1289,7 +1303,7 @@ We can also use code to automate creating publication-quality graphs from model
 results, complete with captions and automatic figure numbers. 
 :::
 
-## MyStudy_Report.html (12)
+## MyStudy_Report.html (13)
 ![](graphics/Output_References.png){fig-alt="Screen capture of MyStudy_Report.html showing References list." height=100%} 
 
 ::: {.notes}
@@ -1297,7 +1311,7 @@ Quarto lets you automate inserting in-text citations and building the full
 reference list. 
 :::
 
-## MyStudy_Report.html (13)
+## MyStudy_Report.html (14)
 ![](graphics/Output_Reference_Tip.png){fig-alt="Screen capture of MyStudy_Report.html showing text that appears right after the Reference list." height=100%} 
 
 ::: {.notes}
@@ -1308,7 +1322,7 @@ controls what formatting rules are used. A short piece of code in the script
 tells Quarto where to put the reference list.
 :::
 
-## MyStudy_Report.html (14)
+## MyStudy_Report.html (15)
 ![](graphics/Output_Software.png){fig-alt="Screen capture of MyStudy_Report.html showing the start of the Software Information section." height=100%} 
 
 ::: {.notes}
