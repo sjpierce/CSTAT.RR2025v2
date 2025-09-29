@@ -161,6 +161,10 @@ Quarto scripts from the source code:
 
 - Install the necessary [software for reproducible research with
   R](https://sjpierce.github.io/rr_software.html).
+- Install my [piercer](https://github.com/sjpierce/piercer) package
+  for R. Instructions are in that repository’s README page. This is
+  needed because the example scripts use a couple functions from
+  piercer.
 - Download or clone the repository to your computer (preferably using
   Git).
 - Double-click the `CSTAT.RR2025v2.Rproj` file from Windows Explorer to
