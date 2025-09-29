@@ -33,15 +33,15 @@ format:
     embed-resources: true             # Makes HTML output file self-contained
     anchor-sections: true
 execute:                              # Default Quarto chunk execution options
-  eval: true
+  eval: true                          # Evaluate the code chunk?
   echo: fenced                        # Show the code in the output file
-  output: true
-  warning: true
-  error: true
-  include: true
+  output: true                        # Include the results of code in output? 
+  warning: true                       # include warnings in output?
+  error: true                         # Include error messages in output?
+  include: true                       # Include both code & results in output? 
 knitr:                                # Default R knitr package chunk options
   opts_chunk: 
-    message: true
+    message: true                     # Include R messages produced by code? 
 ---
 
 # Purpose
