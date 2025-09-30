@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -2408,14 +2408,14 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">2025-09-28 21:49:41 EDT</p>
+        <p class="date">2025-09-30 15:24:02 EDT</p>
       </div>
     </div>
     
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">2025-09-28 21:34:51 EDT</p>
+        <p class="date-modified">2025-09-29 16:26:02 EDT</p>
       </div>
     </div>
       
@@ -3965,7 +3965,7 @@ Tip
 <li>Software chain: <strong>qmd file &gt; RStudio &gt; Quarto &gt; R &gt; knitr &gt; md file &gt; Pandoc &gt; HTML file</strong>.</li>
 <li>Source file: <strong>MyStudy_Report.qmd</strong></li>
 <li>Output file: <strong>output/MyStudy_Report.html</strong></li>
-<li><a href="https://quarto.org/">Quarto 1.8.24</a> runs <code>*.qmd</code> files through <a href="https://www.r-project.org/">R</a> and <a href="https://yihui.org/knitr/">knitr</a> to produce <code>*.md</code> markdown files.</li>
+<li><a href="https://quarto.org/">Quarto 1.8.25</a> runs <code>*.qmd</code> files through <a href="https://www.r-project.org/">R</a> and <a href="https://yihui.org/knitr/">knitr</a> to produce <code>*.md</code> markdown files.</li>
 <li><a href="https://pandoc.org">Pandoc 3.6.3</a> converts markdown files (<code>*.md</code>) to other formats, including LaTeX (<code>*.tex</code>) and HTML (<code>*.html</code>) among others.</li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -4000,7 +4000,7 @@ Tip
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning in system2(&quot;quarto&quot;, &quot;-V&quot;, stdout = TRUE, env = paste0(&quot;TMPDIR=&quot;, :
 running command &#39;&quot;quarto&quot;
-TMPDIR=C:/Users/pierces1/AppData/Local/Temp/Rtmpcrk4m7/file2b28300226da -V&#39; had
+TMPDIR=C:/Users/pierces1/AppData/Local/Temp/RtmpsZaOgc/file53cc381f1c95 -V&#39; had
 status 1</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
@@ -4014,7 +4014,7 @@ status 1</code></pre>
  collate  English_United States.utf8
  ctype    English_United States.utf8
  tz       America/New_York
- date     2025-09-28
+ date     2025-09-30
  pandoc   3.6.3 @ C:/Program Files/RStudio/resources/app/bin/quarto/bin/tools/ (via rmarkdown)
  quarto   NA @ C:\\PROGRA~1\\Quarto\\bin\\quarto.exe
 
@@ -4105,7 +4105,7 @@ status 1</code></pre>
  Rcpp              1.1.0    2025-07-02 [1] CRAN (R 4.5.1)
  remotes           2.5.0    2024-03-17 [1] CRAN (R 4.5.0)
  rlang             1.1.6    2025-04-11 [1] CRAN (R 4.5.0)
- rmarkdown       * 2.29     2024-11-04 [1] CRAN (R 4.5.0)
+ rmarkdown       * 2.30     2025-09-28 [1] CRAN (R 4.5.1)
  rprojroot         2.1.1    2025-08-26 [1] CRAN (R 4.5.1)
  rstudioapi        0.17.1   2024-10-22 [1] CRAN (R 4.5.0)
  S7                0.2.0    2024-11-07 [1] CRAN (R 4.5.1)
@@ -4157,7 +4157,7 @@ status 1</code></pre>
 <div class="cell-output cell-output-stdout">
 <pre><code>Local:    main C:/Users/pierces1/OneDrive - Michigan State University/CSTATRedirects/Documents/Professional/Presentations/CSTAT.RR2025v2
 Remote:   main @ origin (https://github.com/sjpierce/CSTAT.RR2025v2.git)
-Head:     [d50d1eb] 2025-09-29: Rendered example file
+Head:     [0ff149a] 2025-09-30: Update Repository structure section
  </code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
@@ -4674,15 +4674,15 @@ Tip
 <span id="cb50-33"><a href="#cb50-33" aria-hidden="true" tabindex="-1"></a><span class="co">    embed-resources: true             # Makes HTML output file self-contained</span></span>
 <span id="cb50-34"><a href="#cb50-34" aria-hidden="true" tabindex="-1"></a><span class="co">    anchor-sections: true</span></span>
 <span id="cb50-35"><a href="#cb50-35" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span><span class="co">                              # Default Quarto chunk execution options</span></span>
-<span id="cb50-36"><a href="#cb50-36" aria-hidden="true" tabindex="-1"></a><span class="co">  eval: true</span></span>
+<span id="cb50-36"><a href="#cb50-36" aria-hidden="true" tabindex="-1"></a><span class="co">  eval: true                          # Evaluate the code chunk?</span></span>
 <span id="cb50-37"><a href="#cb50-37" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: fenced                        # Show the code in the output file</span></span>
-<span id="cb50-38"><a href="#cb50-38" aria-hidden="true" tabindex="-1"></a><span class="co">  output: true</span></span>
-<span id="cb50-39"><a href="#cb50-39" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: true</span></span>
-<span id="cb50-40"><a href="#cb50-40" aria-hidden="true" tabindex="-1"></a><span class="co">  error: true</span></span>
-<span id="cb50-41"><a href="#cb50-41" aria-hidden="true" tabindex="-1"></a><span class="co">  include: true</span></span>
+<span id="cb50-38"><a href="#cb50-38" aria-hidden="true" tabindex="-1"></a><span class="co">  output: true                        # Include the results of code in output? </span></span>
+<span id="cb50-39"><a href="#cb50-39" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: true                       # include warnings in output?</span></span>
+<span id="cb50-40"><a href="#cb50-40" aria-hidden="true" tabindex="-1"></a><span class="co">  error: true                         # Include error messages in output?</span></span>
+<span id="cb50-41"><a href="#cb50-41" aria-hidden="true" tabindex="-1"></a><span class="co">  include: true                       # Include both code &amp; results in output? </span></span>
 <span id="cb50-42"><a href="#cb50-42" aria-hidden="true" tabindex="-1"></a><span class="an">knitr:</span><span class="co">                                # Default R knitr package chunk options</span></span>
 <span id="cb50-43"><a href="#cb50-43" aria-hidden="true" tabindex="-1"></a><span class="co">  opts_chunk: </span></span>
-<span id="cb50-44"><a href="#cb50-44" aria-hidden="true" tabindex="-1"></a><span class="co">    message: true</span></span>
+<span id="cb50-44"><a href="#cb50-44" aria-hidden="true" tabindex="-1"></a><span class="co">    message: true                     # Include R messages produced by code? </span></span>
 <span id="cb50-45"><a href="#cb50-45" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb50-46"><a href="#cb50-46" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb50-47"><a href="#cb50-47" aria-hidden="true" tabindex="-1"></a><span class="fu"># Purpose</span></span>
